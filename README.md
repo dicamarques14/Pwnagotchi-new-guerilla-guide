@@ -178,10 +178,10 @@ sudo su
 bluetoothctl
 scan on
 discoverable on
-paired-devices # copy device adress
+devices Paired # copy device adress
 untrust *device adress*  #run this command a few times
 remove *device adress*   #run this command a few times
-paired-devices #make sure list is empty, if not- run previous command until it is empty
+devices Paired #make sure list is empty, if not- run previous command until it is empty
 pair *device adress* #*In short time (maybe not immediately) you will be prompted on the phone to allow connection from your pwnagotchi hostname- pair*
 trust *device adress*
 exit
